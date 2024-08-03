@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splishFragment">
+
+    <fragment
+        android:id="@+id/splishFragment"
+        android:name="shayan.ahsan.currencyconverter.fragments.SplashFragment"
+        android:label="fragment_splish"
+        tools:layout="@layout/fragment_splish" >
+        <action
+            android:id="@+id/action_splishFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/splishFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="shayan.ahsan.currencyconverter.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+</navigation>
