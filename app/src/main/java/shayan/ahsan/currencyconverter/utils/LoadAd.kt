@@ -27,7 +27,7 @@ object LoadAd {
     var nativeAd: NativeAd? = null
 
     fun loadNative(mActivity: Activity) {
-        val adLoader = AdLoader.Builder(mActivity, mActivity.getString(R.string.admob_native_ad)) // Replace with your ad unit ID
+        val adLoader = AdLoader.Builder(mActivity, mActivity.getString(R.string.admob_native_ad))
             .forNativeAd { nati: NativeAd ->
                 nativeAd = nati
                 val frameLayout = mActivity.findViewById<FrameLayout>(R.id.ad_container)
